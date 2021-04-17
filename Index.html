@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Friends Video</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="webContainer">
+        <div class="Top-pane">
+            <div class="logocontainer">
+                <img src="assets/agoraLogo.png" />
+            </div>
+            <div class="registerfrom">
+                <input type="text" id="username" placeholder="Username" value="JohnDoe123">
+                <input type="text" id="channelName" placeholder="ChannelName" value="Agora">
+                </br>
+                <button class="submitButton" id="join">Join</button>
+                <button class="MuteButton" id="video-mute">Mute Video</button>
+                <button class="MuteButton" id="audio-mute">Mute Audio</button>
+            </div>
+        </div>
+        <div class="video-container">
+            <div class="left-pane">
+                <span class="TextCont">You'll be there.</span>
+                <div id="SelfStream">
+                </div>
+            </div>
+            <div class="right-pane">
+                <span class="TextCont">Your friend is there.</span>
+                <div id="remoteStream">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.agora.io/sdk/release/AgoraRTCSDK-3.1.1.js"></script>
+    <script src="agoraRtc.js"></script>
+</body>
+
+</html>
